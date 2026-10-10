@@ -46,27 +46,31 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center">
 
-      <!-- <a href="index.html" class="logo d-flex align-items-center me-auto">
-        
-      </a> -->
-      <img src="images/12345/12345.png" alt="Saniya Baikar Logo" class="footer-logo-img">
+        <!-- Logo -->
+        <a href="#hero" class="logo-link">
+            <img src="images/my_logo1.svg"
+                 alt="Saniya Baikar Logo"
+                 class="header-logo">
+        </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+        <!-- Navigation -->
+        <nav id="navmenu" class="navmenu ms-auto">
+            <ul>
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
     </div>
-  </header>
+</header>
 
   <main class="main">
 
@@ -111,7 +115,7 @@
             <div class="profile-card">
               <div class="profile-header">
                 <div class="profile-avatar">
-                  <img src="assets/img/profile/profile-square-3.webp" class="img-fluid" alt="">
+                  <img src="images/Web Design Editor Line Icon.png" class="img-fluid" alt="">
                   <div class="status-indicator"></div>
                 </div>
                 <h3>Saniya Baikar</h3>
@@ -129,8 +133,8 @@
               
 
               <div class="profile-actions">
-                <a href="#" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
-                <a href="#" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
+                <a href="Resume/Resume.pdf" class="btn-primary"><i class="bi bi-download"></i> Download CV</a>
+                <a href="#contact" class="btn-secondary"><i class="bi bi-envelope"></i> Contact</a>
               </div>
 
               <div class="social-connect">
@@ -305,8 +309,8 @@
                   </div>
                   <div class="card-body">
                     <h3>UI/UX Designer Intern</h3>
-                    <p class="company-name">CoPASS</p>
-                    <span class="duration">2023 - Present</span>
+                    <p class="company-name">CoPASS Technology & Services Pvt Ltd</p>
+                    <span class="duration">Present</span>
                     <p class="description">Working on UI/UX designs using Figma, creating wireframes
                         and prototypes, and developing user-friendly interfaces
                         while gaining practical industry experience.</p>
@@ -605,40 +609,44 @@
 
         <div class="row gy-4">
 
-          <div class="col-lg-4">
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-geo-alt"></i>
-              </div>
-              <div>
-                <h3>Address</h3>
-                <p>403 Sant Ramdas bldg, Manvelpada Road, Virar 401305</p>
-              </div>
+          <div class="row gy-4">
+
+            <!-- Address -->
+            <div class="col-lg-4 col-md-4">
+                <div class="info-item">
+                    <i class="bi bi-geo-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>403 Sant Ramdas bldg, Manvelpada Road, Virar 401305</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-telephone"></i>
-              </div>
-              <div>
-                <h3>Call Me</h3>
-                <p>+91 7977545517</p>
-              </div>
+            <!-- Call Me -->
+            <div class="col-lg-4 col-md-4">
+                <div class="info-item">
+                    <i class="bi bi-telephone"></i>
+                    <div>
+                        <h4>Call Me</h4>
+                        <p>+91 7977545517</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="info-item">
-              <div class="icon-wrapper">
-                <i class="bi bi-envelope"></i>
+              <!-- Email Me -->
+              <div class="col-lg-4 col-md-4">
+                  <div class="info-item">
+                      <i class="bi bi-envelope"></i>
+                      <div>
+                          <h4>Email Me</h4>
+                          <p>saniyabaikar176@gmail.com</p>
+                      </div>
+                  </div>
               </div>
-              <div>
-                <h3>Email Me</h3>
-                <p><a href="mailto:saniyabaikar176@gmail.com">saniyabaikar176@gmail.com</a></p>
-              </div>
-            </div>
 
           </div>
 
-          <div class="col-lg-8">
+          <!-- <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form">
               <div class="row gy-4">
 
@@ -668,9 +676,9 @@
 
               </div>
             </form>
-          </div>
+          </div> -->
 
-        </div>
+        <!-- </div> -->
 
       </div>
 
@@ -685,7 +693,7 @@
         <div class="col-lg-5 col-md-12 footer-about">
           <div class="col-lg-5 col-md-4 footer-logo">
               <a href="#home">
-                <img src="images/12345/12345.png" alt="Saniya Baikar Logo" class="footer-logo-img">
+                <img src="images/my_logo1.svg" alt="Saniya Baikar Logo" class="footer-logo-img">
               </a>
           </div>
           
@@ -701,8 +709,8 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
           </ul>
         </div>
 

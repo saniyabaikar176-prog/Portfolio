@@ -144,17 +144,41 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
-  --heading-color: #ffffff;
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 15px 0;
-  transition: all 0.5s;
-  z-index: 997;
+.header .logo-link {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
 }
 
-.header .logo {
-  line-height: 1;
+.header .header-logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.header .navmenu {
+    margin-left: auto;
+}
+
+.header .navmenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header .navmenu ul li a {
+    padding: 12px 10px;
+    white-space: nowrap;
+}
+
+@media (max-width: 1199px) {
+    .header .header-logo {
+        width: 125px;
+    }
 }
 
 .header .logo img {
@@ -720,7 +744,7 @@ section,
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   position: relative;
 }
 
@@ -2163,15 +2187,39 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
-.contact .info-item {
-  background: var(--surface-color);
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  margin-bottom: 20px;
-  display: flex;
-  align-items: flex-start;
-  transition: 0.3s;
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    height: 100%;
+    padding: 25px 20px;
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 12px;
+}
+
+.info-item i {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #382122;
+    color: #ff4d4f;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.info-item h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info-item p {
+    font-size: 14px;
+    margin: 0;
+    overflow-wrap: anywhere;
 }
 
 .contact .info-item:hover {
